@@ -6,7 +6,7 @@ This repository contains a machine learning project aimed at predicting the surv
 The sinking of the Titanic is one of the most infamous shipwrecks in history. On April 15, 1912, during her maiden voyage, the Titanic sank after colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This project aims to predict whether a passenger would survive the disaster based on various features like age, gender, and class.
 
 ## Dataset
-The dataset used in this project is provided by Kaggle and can be found [here]([https://www.kaggle.com/c/titanic/data](https://www.kaggle.com/competitions/titanic/data)). It includes information about the passengers, such as:
+The dataset used in this project is provided by Kaggle and can be found [here](https://www.kaggle.com/competitions/titanic/data). It includes information about the passengers, such as:
 - `PassengerId`: Unique ID for each passenger
 - `Survived`: Survival (0 = No; 1 = Yes)
 - `Pclass`: Ticket class (1 = 1st; 2 = 2nd; 3 = 3rd)
