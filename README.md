@@ -1,3 +1,4 @@
+[EN]
 # Titanic Survival Prediction
 
 This repository contains a machine learning project aimed at predicting the survival of passengers aboard the Titanic. The project is developed as part of a Kaggle competition and utilizes various classification algorithms to achieve accurate predictions.
@@ -43,3 +44,61 @@ Models were evaluated using accuracy, precision, recall, and F1-score. Cross-val
 The Random Forest model achieved the highest accuracy on the test set. Detailed results and performance metrics for each model are provided in the notebook.
 
 ![Kaggle-Score](https://github.com/user-attachments/assets/402765f5-b07a-4f08-a9ba-3b57bf0045b9)
+
+[TR]
+# Titanic Survival Prediction
+
+Bu repo, Titanic yolcularının hayatta kalma durumlarını tahmin etmeyi amaçlayan bir makine öğrenimi projesini içermektedir. Proje, bir Kaggle yarışması kapsamında geliştirilmiş olup, çeşitli sınıflandırma algoritmalarını kullanarak doğru tahminler yapmayı hedeflemektedir.
+
+---
+
+## Giriş
+Titanic’in batışı, tarihteki en meşhur deniz felaketlerinden biridir. 15 Nisan 1912'de, ilk yolculuğu sırasında bir buzdağına çarparak batan Titanic, 2224 yolcu ve mürettebatından 1502'sinin hayatını kaybetmesine neden olmuştur. Bu proje, yolcuların yaş, cinsiyet ve bilet sınıfı gibi özelliklere dayanarak hayatta kalıp kalamayacağını tahmin etmeyi amaçlamaktadır.
+
+---
+
+## Veri Seti
+Bu projede kullanılan veri seti, Kaggle tarafından sağlanmaktadır ve [buradan](https://www.kaggle.com/competitions/titanic/data) ulaşılabilir. Veri seti, yolcular hakkında şu bilgileri içermektedir:
+- `PassengerId`: Her yolcu için kimlik numarası
+- `Survived`: Hayatta kalma durumu (0 = Hayır; 1 = Evet)
+- `Pclass`: Bilet sınıfı (1 = 1. sınıf; 2 = 2. sınıf; 3 = 3. sınıf)
+- `Name`: Yolcunun adı
+- `Sex`: Cinsiyet
+- `Age`: Yaş
+- `SibSp`: Titanic'te bulunan kardeş/eş sayısı
+- `Parch`: Titanic'te bulunan ebeveyn/çocuk sayısı
+- `Ticket`: Bilet numarası
+- `Fare`: Yolcu ücreti
+- `Cabin`: Kabin numarası
+- `Embarked`: Gemiye biniş limanı (C = Cherbourg; Q = Queenstown; S = Southampton)
+
+---
+
+## Özellikler
+Modelde kullanılan ve türetilen özellikler:
+- **Age**: Eksik değerler medyan ile doldurulmuştur.
+- **Fare**: Dağılımı normalleştirmek için log dönüşümü uygulanmıştır.
+- **Embarked**: Eksik değerler doldurulmuş ve dummy değişkenlere dönüştürülmüştür.
+- **Pclass**: Kategorik bir değişken olarak işlenmiştir.
+- **FamilySize**: `SibSp` ve `Parch` değişkenleri birleştirilerek oluşturulmuştur.
+
+---
+
+## Modelleme
+Projede kullanılan makine öğrenimi algoritmaları:
+- Logistic Regression
+- Decision Trees
+- Random Forest
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+
+### Model Değerlendirme
+Modeller; doğruluk (accuracy), hassasiyet (precision), geri çağırma (recall) ve F1-skor metrikleri kullanılarak değerlendirilmiştir. Modelin sağlamlığını artırmak için çapraz doğrulama uygulanmıştır.
+
+---
+
+## Sonuçlar
+Test setinde en yüksek doğruluk oranına **Random Forest** modeli ulaşmıştır. Her bir modelin detaylı sonuçları ve performans metrikleri notebook içerisinde sunulmaktadır.
+
+![Kaggle-Score](https://github.com/user-attachments/assets/402765f5-b07a-4f08-a9ba-3b57bf0045b9)
+
